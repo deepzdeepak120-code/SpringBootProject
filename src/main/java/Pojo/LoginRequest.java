@@ -2,27 +2,24 @@ package Pojo;
 
 public class LoginRequest {
 
+    private String password;
 
     public String getPassword() {
-        return Password;
+        return password;
     }
 
     public void setPassword(String password) {
-        Password = password;
+        this.password = password;
     }
 
     public String getEmail() {
-        return Email;
+        return email;
     }
 
     public void setEmail(String email) {
-        Email = email;
+        this.email = email;
     }
 
-    private String Password;
-
-
-
-    private String Email;
+    private String email;
 
 }

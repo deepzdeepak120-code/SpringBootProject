@@ -56,7 +56,7 @@ public class ErrorTemplate {
         return path;
     }
 
-    public void setPath() {
+    public void setPath(String path) {
         this.path = path;
     }
 

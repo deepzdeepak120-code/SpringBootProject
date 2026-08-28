@@ -2,6 +2,7 @@ package Controller;
 
 
 import Entity.Student;
+import Pojo.LoginRequest;
 import Pojo.StudentRequests;
 import Service.StudentService;
 import jakarta.validation.Valid;
@@ -31,4 +32,16 @@ public class StudentController {
 
         return studentService.studentList();
     }
+
+
+
+
+    @PostMapping("/login")
+    public String Login(@RequestBody LoginRequest loginRequest){
+
+        studentService.Login(loginRequest);
+        return "Login Successfull";
+    }
+
+
 }

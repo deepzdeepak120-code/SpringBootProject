@@ -1,5 +1,7 @@
 package Company.SpringProjectNew;
 
+import org.hibernate.tool.schema.internal.exec.ScriptTargetOutputToFile;
+
 public class test {
 
 
@@ -23,6 +25,9 @@ public class test {
     public void testing2() {
 
         testing();
+
+
+        System.out.println("Test-Intellij and VS Code at same time");
     }
 
 
