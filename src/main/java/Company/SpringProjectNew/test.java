@@ -9,6 +9,7 @@ public class test {
         test obj = new test(); 
 
         obj.testing2();
+        System.out.println("test commment");
 
     }
 
