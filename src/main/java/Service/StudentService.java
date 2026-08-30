@@ -27,11 +27,9 @@ public class StudentService {
 //    }
 
 
-    Student studentEntity = new Student();
-
     public void signup(StudentRequests STR){
 
-
+        Student studentEntity = new Student();
 
         studentEntity.setName(STR.getName());
         studentEntity.setAge(STR.getAge());
@@ -48,15 +46,11 @@ public class StudentService {
 
         return studentRepository.findAll();
     }
-
     public Student Login(LoginRequest loginRequest){
-
 
         Optional<Student> Email = studentRepository.findByEmail(loginRequest.getEmail());
 
         logger.info("The Email is {}",Email);
-
-
         if (Email.isEmpty())
         {
         throw new StudentNotFoundException("No student found with email:"+loginRequest.getEmail());
